@@ -30,15 +30,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./blog
+        working-directory: Arcs-ur/blog
 
       - name: Install Hexo CLI
         run: npm install -g hexo-cli
-        working-directory: ./blog
+        working-directory: Arcs-ur/blog
 
       - name: Generate static pages
         run: hexo generate
-        working-directory: ./blog
+        working-directory: Arcs-ur/blog
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
