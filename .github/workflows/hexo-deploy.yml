@@ -43,7 +43,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          personal_token: ${{ secrets.HEXO_TOKEN }}
           publish_dir: ./blog/public
           external_repository: Arcs-ur/arcs-ur.github.io # 更改为你的 GitHub Pages 仓库, username 是你的用户名
           publish_branch: main # GitHub Pages 分支
